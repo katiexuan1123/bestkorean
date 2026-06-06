@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fredoka', 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-cream: #FCFAF2;
+  --color-milk: #FFFDF8;
+  --color-korean-coral-light: #FDF1EE;
+  --color-korean-coral: #DF9B92;
+  --color-korean-sage-light: #FAF2E6;
+  --color-korean-sage: #E3B373;
+  --color-korean-blue-light: #F6F3EC;
+  --color-korean-blue: #9E948A;
+  --color-korean-yellow-light: #FAF2E6;
+  --color-korean-yellow: #E3B373;
+}
+
+/* Custom fade effects and utility styles */
+@layer utilities {
+  .cream-gradient {
+    background: linear-gradient(135deg, #FAF8F1 0%, #FAF6EE 100%);
+  }
+  .card-gradient-mock {
+    background: linear-gradient(145deg, #FAF8F5 0%, #FFFDFB 45%, #FEF8F0 100%);
+  }
+}
+
+body {
+  background-color: var(--color-cream);
+  color: #4E4744;
+  font-family: var(--font-sans);
+}
+
+/* Custom interactive highlighting inside rendered reading articles */
+.interactive-word {
+  cursor: pointer;
+  border-bottom: 2px dashed #F2D8AA;
+  padding: 0 2px;
+  background-color: #FAF2DE;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  color: #4E4744;
+}
+
+.interactive-word:hover {
+  background-color: #DF9B92;
+  color: white;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Korean Learning Notebook",
+  "description": "An interactive Korean vocabulary notebook, AI dictionary, and reading comprehension generator with auto-grading.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
